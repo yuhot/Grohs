@@ -10,40 +10,40 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 
-cl = LineClient(authToken='YOUR TOKEN')
+#cl = LineClient(authToken='YOUR TOKEN')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='YOUR TOKEN')
+#ki = LineClient(authToken='YOUR TOKEN')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='YOUR TOKEN')
-kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#kk = LineClient(authToken='YOUR TOKEN')
+#kk.log("Auth Token : " + str(kk.authToken))
+#channel2 = LineChannel(kk)
+#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='YOUR TOKEN')
-kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#kc = LineClient(authToken='YOUR TOKEN')
+#kc.log("Auth Token : " + str(kc.authToken))
+#channel3 = LineChannel(kc)
+#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-kl = LineClient(authToken='YOUR TOKEN')
-kl.log("Auth Token : " + str(kl.authToken))
-channel4 = LineChannel(kl)
-kl.log("Channel Access Token : " + str(channel4.channelAccessToken))
+#kl = LineClient(authToken='YOUR TOKEN')
+#kl.log("Auth Token : " + str(kl.authToken))
+#channel4 = LineChannel(kl)
+#kl.log("Channel Access Token : " + str(channel4.channelAccessToken))
 
-km = LineClient(authToken='YOUR TOKEN')
-km.log("Auth Token : " + str(km.authToken))
-channel5 = LineChannel(km)
-kc.log("Channel Access Token : " + str(channel5.channelAccessToken))
+#km = LineClient(authToken='YOUR TOKEN')
+#km.log("Auth Token : " + str(km.authToken))
+#channel5 = LineChannel(km)
+#kc.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
-kr = LineClient(authToken='YOUR TOKEN')
-kr.log("Auth Token : " + str(kr.authToken))
-channel6 = LineChannel(km)
-kr.log("Channel Access Token : " + str(channel6.channelAccessToken))
+#kr = LineClient(authToken='YOUR TOKEN')
+#kr.log("Auth Token : " + str(kr.authToken))
+#channel6 = LineChannel(km)
+#kr.log("Channel Access Token : " + str(channel6.channelAccessToken))
 
 sw = LineClient(authToken='YOUR TOKEN')
 sw.log("Auth Token : " + str(sw.authToken))
@@ -52,21 +52,21 @@ sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = cl
-creator = ["YOUR MID"]
-owner = ["YOUR MID"]
-admin = ["YOUR MID"]
-staff = ["YOUR MID"]
+creator = ["u4720a60c5599c6aa7bb1cb556ae929f4"]
+owner = ["u4720a60c5599c6aa7bb1cb556ae929f4"]
+admin = ["u4720a60c5599c6aa7bb1cb556ae929f4"]
+staff = ["u4720a60c5599c6aa7bb1cb556ae929f4"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
-Bmid = kk.getProfile().mid
-Cmid = kc.getProfile().mid
-Dmid = kc.getProfile().mid
-Emid = kl.getProfile().mid
-Fmid = km.getProfile().mid
+#Bmid = kk.getProfile().mid
+#Cmid = kc.getProfile().mid
+#Dmid = kc.getProfile().mid
+#Emid = kl.getProfile().mid
+#Fmid = km.getProfile().mid
 Zmid = sw.getProfile().mid
-KAC = [cl,ki,kk,kc,kl,km,kr]
-ABC = [ki,kk,kc]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Zmid]
+KAC = [cl,ki]
+ABC = [ki]
+Bots = [mid,Amid,Zmid]
 Sang = admin + staff
 
 protectqr = []
